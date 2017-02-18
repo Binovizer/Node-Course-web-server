@@ -64,6 +64,14 @@ app.get('/bad',(req,res)=>{
   });
 });
 
+app.get('/projects',(req,res)=>{
+  res.render('projects',{
+    pageTitle: 'Project Page',
+    companyName : 'ABC',
+    welcomeMsg : 'Some Portfolios here'
+  });
+});
+
 app.listen(port, ()=>{
   console.log("Server is up at port "+port);
 });
